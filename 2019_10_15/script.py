@@ -94,10 +94,15 @@ print(dics["de_fr"]["rot"])
 
 capitals = {"Hessen":"Wiesbaden", "Saarland":"Saarbrücken", "Baden-Württemberg":"Stuttgart", "Rheinland-Pfalz":"Mainz", "NordrheinWestfalen":"Düsseldorf"}
 
+print(capitals)
 
-print(capitals.pop("Hessen","unbekannt"))
-print(capitals.pop("Hessen","unbekannt"))
+capitals.popitem()
+capitals.popitem()
+print(capitals)
 
-(land, capital) = capitals.popitem()
-pair = capitals.popitem()
-print(pair)
+#print(capitals.pop("Hessen","unbekannt"))
+#print(capitals.pop("Hessen","unbekannt"))
+#
+#(land, capital) = capitals.popitem()
+#pair = capitals.popitem()
+#print(pair)
