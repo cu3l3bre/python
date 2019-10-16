@@ -76,3 +76,28 @@ print(en_de["red"])
 
 dicttest = {"a":2, "a":3}
 print(dicttest["a"])
+
+
+dic = { (1,2,3):"abc", 3.1415:"abc"}
+print(dic[(1,2,3)])
+
+
+
+de_en = {"rot":"red","blau":"blue"}
+de_fr = {"rot":"rouge", "blue":"bleu"}
+
+dics = {"de_en" : de_en, "de_fr" : de_fr}
+print()
+print(dics["de_en"]["blau"])
+print(dics["de_fr"]["rot"])
+
+
+capitals = {"Hessen":"Wiesbaden", "Saarland":"Saarbrücken", "Baden-Württemberg":"Stuttgart", "Rheinland-Pfalz":"Mainz", "NordrheinWestfalen":"Düsseldorf"}
+
+
+print(capitals.pop("Hessen","unbekannt"))
+print(capitals.pop("Hessen","unbekannt"))
+
+(land, capital) = capitals.popitem()
+pair = capitals.popitem()
+print(pair)
