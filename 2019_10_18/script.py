@@ -179,3 +179,90 @@ print()
 print(data)
 
 
+print()
+print(data[data['Density'] > 100])
+print()
+
+
+
+index = [('California', 2000), ('California', 2010),
+         ('New York', 2000), ('New York', 2010),
+         ('Texas', 2000), ('Texas', 2010)]
+
+print(index)
+
+
+populations = [33871648, 37253956,
+               18976457, 19378102,
+               20851820, 25145561]
+print(populations)
+print()
+pop = pd.Series(populations, index)
+print(pop)
+print()
+
+
+index2 = pd.MultiIndex.from_tuples(index)
+print(index2)
+print()
+
+pop2 = pop.reindex(index2)
+print(pop2)
+print()
+print(pop2['California'])
+print()
+print(pop2[:])
+print()
+
+
+pop2_df = pop2.unstack()
+print(pop2_df)
+print()
+
+pop2_stacked = pop2_df.stack()
+print(pop2_stacked)
+print()
+
+pop2_df = pd.DataFrame({'total': pop2, 'under18':[9267089, 9284094, 4687374, 4318033, 5906301, 6879014]})
+
+print(pop2_df)
+print()
+
+
+f_u18 = pop2_df['under18'] / pop2_df['total']
+print(f_u18)
+print()
+
+print(f_u18.unstack())
+print()
+
+
+index = pd.MultiIndex.from_product([[2013, 2014], [1, 2]], names=['year', 'visit'])
+print(index)
+print()
+
+columns = pd.MultiIndex.from_product([['Bob', 'Jim', 'Sue'], ['HR', 'Temp']], names=['subject', 'type'])
+print(columns)
+print()
+
+
+# Daten simulieren
+data = np.round(np.random.randn(4, 6), 1)
+data[:, ::2] *= 10
+data += 37
+
+# DataFrame erzeugen
+health_data = pd.DataFrame(data, index=index, columns=columns)
+print(health_data)
+print()
+
+print(health_data['Jim'])
+print()
+
+print(health_data['Bob']['HR'])
+print()
+
+print(health_data['Bob']['HR'][2013])
+
+
+
