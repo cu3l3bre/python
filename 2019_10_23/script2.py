@@ -24,6 +24,4 @@ dbConnection.execute('REPLACE INTO Reservierung (SELECT * FROM mydatatable_temp)
 df = pd.read_sql_query(sqlSelect, sqlEngine)
 print(df, '\n')
 
-
-
 dbConnection.close()
