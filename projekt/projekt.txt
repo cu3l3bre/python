@@ -1,0 +1,70 @@
+dokiment klassifatkio
+support vecotr maschine
+menge von dokumebnten 
+text aus pdfs , folge von 3 drei beriffen, trigrammen
+
+
+aksusitsiche signale 
+zeitrihen
+ton oder lärm -> klassifikation
+
+
+parameter vom tumor
+bösartig oder artig
+farbe breite von tumor -> gutu oder böse
+
+
+*****
+erkennung von bildern
+projektirion aus bikdern
+neuronales netz
+*****
+
+
+berichten üner tensorflow
+ursprünglich von google
+python hat auch tesnorflow
+damit hat iwie was machen
+
+https://www.tensorflow.org/tutorials
+https://pythonprogramming.net/tensorflow-introduction-machine-learning-tutorial/
+https://pypi.org/project/tensorflow/
+https://www.youtube.com/watch?v=6g4O5UOH304
+https://data-science-blog.com/blog/2018/10/09/ii-einfuhrung-in-tensorflow-grundverstandnis-fur-tensorflow/
+https://www.youtube.com/watch?v=CrpAiAHjfCo
+
+
+wie kann man mit pyrhing  josn formate bearbeiten
+https://docs.python.org/3/library/json.html
+
+
+
+vergleich von pysraprk und sckit leran algotihmen
+alle algrotihmen die wir heute besprechen
+verleiche machen, geschwindigkeit usw
+werelche algotier ist schneller
+
+
+prozess mining 
+moduliertes prozess
+zeitabläufe abbilden
+zielt ereich roder nicht erreicht
+
+
+
+
+
+
+rdf semantin file das gleiche wie mit python
+semenatische vernetzungen
+
+
+neo4j
+
+dorm oder sowas eher für abläufe
+storm? apache
+
+
+
+
+
